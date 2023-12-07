@@ -52,7 +52,6 @@ private fun getRank(it: List<Int>): Int {
             if (it[1] == 2) 4         // full house
             else 3                    // three of a kind
         }
-
         it[0] == 2 && it[1] == 2 -> 2 // two pairs
         it[0] == 2 -> 1               // one pair
         else -> 0
