@@ -13,7 +13,7 @@ private fun part1(lines: List<String>): Int {
     val bidByHand = lines.map { it.split(' ') }
         .associate { it[0] to it[1].toInt() }
 
-    return calculateFinalBid(bidByHand, cardsOrder) { order: List<Int>, hand: String -> getRank(order) }
+    return calculateFinalBid(bidByHand, cardsOrder) { order: List<Int>, _: String -> getRank(order) }
 }
 
 private fun part2(lines: List<String>): Int {
